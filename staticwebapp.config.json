@@ -33,5 +33,11 @@
   },
   "platform": {
     "apiRuntime": "node:18"
+  },
+  "buildProperties": {
+    "skipBuildDuringDeploy": false,
+    "apiBuildCommand": "",
+    "appBuildCommand": "npm run build:azure",
+    "outputLocation": ".next"
   }
 }
