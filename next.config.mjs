@@ -13,9 +13,6 @@ const nextConfig = {
   trailingSlash: true,
   assetPrefix: '',
   basePath: '',
-  experimental: {
-    appDir: true,
-  },
 }
 
 export default nextConfig
