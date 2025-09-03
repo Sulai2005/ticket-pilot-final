@@ -1,17 +1,37 @@
 {
-    "routes": [
-      {
-        "route": "/*",
-        "serve": "/index.html",
-        "statusCode": 200
-      }
-    ],
-    "navigationFallback": {
-      "rewrite": "/index.html",
-      "exclude": ["/images/*.{png,jpg,gif}", "/css/*", "/js/*"]
+  "routes": [
+    {
+      "route": "/_next/*",
+      "serve": "/_next/*"
     },
-    "platform": {
-      "apiRuntime": "node:18"
+    {
+      "route": "/static/*",
+      "serve": "/static/*"
+    },
+    {
+      "route": "/images/*",
+      "serve": "/images/*"
+    },
+    {
+      "route": "/favicon.ico",
+      "serve": "/favicon.ico"
+    },
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
     }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/_next/*",
+      "/static/*",
+      "/images/*",
+      "/*.{png,jpg,gif,svg,ico,css,js,woff,woff2,ttf,eot}"
+    ]
+  },
+  "platform": {
+    "apiRuntime": "node:18"
   }
-  
+}
