@@ -10,6 +10,10 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
+  distDir: '.next',
+  generateBuildId: async () => {
+    return 'build'
+  }
 }
 
 export default nextConfig
