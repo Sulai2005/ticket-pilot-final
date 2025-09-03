@@ -39,5 +39,8 @@
     "apiBuildCommand": "",
     "appBuildCommand": "npm run build:azure",
     "outputLocation": ".next"
+  },
+  "globalHeaders": {
+    "cache-control": "no-cache"
   }
 }
