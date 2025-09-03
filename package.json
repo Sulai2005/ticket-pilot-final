@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "build:azure": "next build",
+    "build:azure": "next build && echo 'Build completed successfully'",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
